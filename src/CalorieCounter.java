@@ -1,3 +1,5 @@
+import domain.Elf;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
