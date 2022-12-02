@@ -5,20 +5,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class CalorieCounter {
+public class Day1 {
     public static void main(String[] args) {
         var elves = new ArrayList<Elf>();
         try (var fileReader = new BufferedReader(new FileReader(args[0]))) {
-            var line = fileReader.readLine();
             var elf = new Elf();
-            while (line != null) {
-                if (line.isEmpty()) {
+            for(var line = fileReader.readLine(); line != null; line = fileReader.readLine()) {
+                if (line.isEmpty() && elf.hasFood()) {
                     elves.add(elf);
                     elf = new Elf();
                 } else {
                     elf.addFood(Integer.parseInt(line));
                 }
-                line = fileReader.readLine();
             }
             if (elf.hasFood())
                 elves.add(elf);

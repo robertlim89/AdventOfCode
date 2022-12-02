@@ -6,13 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class RPSGame {
+public class Day2 {
     public static void main(String[] args) {
         var games = new ArrayList<RPSRound>();
         try (var fileReader = new BufferedReader(new FileReader(args[0]))) {
             for(var line = fileReader.readLine(); line != null; line = fileReader.readLine()) {
-                var plays = line.split(" ");
-                var game = new RPSRound(plays[0], plays[1]);
+                var round = line.split(" ");
+                var game = new RPSRound(round[0], round[1]);
                 games.add(game);
             }
             System.out.println("Total score: " + games.stream().map(RPSRound::getPoints).reduce(Integer::sum).orElse(-1));

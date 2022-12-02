@@ -1,15 +1,15 @@
 package domain;
 
 public class RPSRound {
-    private final Play opponent;
-    private final Play player;
+    private final RPSHand opponent;
+    private final RPSHand player;
 
-    public RPSRound(String opponent, String player) {
-        this.opponent = Play.getMatching(opponent);
-        this.player = this.opponent.getResultFor(player);
+    public RPSRound(String opponent, String result) {
+        this.opponent = RPSHand.getMatching(opponent);
+        this.player = this.opponent.getHandFor(result);
     }
 
     public int getPoints() {
-        return player.getPoints() + player.getWinner(opponent);
+        return player.getPoints() + player.getPointsAgainst(opponent);
     }
 }

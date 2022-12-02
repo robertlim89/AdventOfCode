@@ -1,18 +1,13 @@
 package domain;
 
-public enum Play {
-    ROCK("A", "X", 1),
-    PAPER("B", "Y", 2),
-    SCISSORS("C", "Z", 3);
-
-    private final String asOpponent;
-    private final String asPlayer;
+public enum RPSHand {
+    ROCK(1),
+    PAPER(2),
+    SCISSORS(3);
 
     private final int points;
 
-    Play(String asOpponent, String asPlayer, int points) {
-        this.asOpponent = asOpponent;
-        this.asPlayer = asPlayer;
+    RPSHand(int points) {
         this.points = points;
     }
 
@@ -20,7 +15,7 @@ public enum Play {
         return points;
     }
 
-    public static Play getMatching(String variable){
+    public static RPSHand getMatching(String variable) {
         switch(variable) {
             case "A":
             case "X":
@@ -36,7 +31,7 @@ public enum Play {
         }
     }
 
-    public int getWinner(Play other) {
+    public int getPointsAgainst(RPSHand other) {
         if (this == other) return 3;
         switch (this) {
             case ROCK:
@@ -50,7 +45,7 @@ public enum Play {
         }
     }
 
-    private Play getWinner() {
+    private RPSHand getWinner() {
         switch(this) {
             case ROCK: return PAPER;
             case PAPER: return SCISSORS;
@@ -60,7 +55,7 @@ public enum Play {
         }
     }
 
-    private Play getLoser() {
+    private RPSHand getLoser() {
         switch(this) {
             case ROCK: return SCISSORS;
             case PAPER: return ROCK;
@@ -70,8 +65,8 @@ public enum Play {
         }
     }
 
-    public Play getResultFor(String player) {
-        switch(player) {
+    public RPSHand getHandFor(String result) {
+        switch(result) {
             case "X":
                 return getLoser();
             case "Y":
