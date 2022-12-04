@@ -4,25 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day1/Day1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day3/Day3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day3/input/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add gitignore">
+      <change afterPath="$PROJECT_DIR$/Day1/src/Day1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day1/src/Day2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day1/src/domain/Elf.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day1/src/domain/RPSHand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day1/src/domain/RPSRound.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/Day4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/src/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022Project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Elf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/RPSHand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/RPSRound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/src/Day1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/src/Day2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/src/domain/Elf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/src/domain/RPSHand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/src/domain/RPSRound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IOHeRUpc3b7ic8VkV5TtHsIn3J" />
   <component name="ProjectViewState">
@@ -42,15 +57,30 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/code/aoc/2022",
-    "project.structure.last.edited": "Project",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/code/aoc/2022/Day4",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Day4 (i)">
+    <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day1" />
+      <module name="Day1" />
+      <option name="PROGRAM_PARAMETERS" value=".\files\input.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day3" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Day3" />
       <option name="PROGRAM_PARAMETERS" value=".\input\sample.txt" />
@@ -60,11 +90,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.MainKt" />
-      </list>
-    </recent_temporary>
+    <configuration name="Day4 (i)" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day4" />
+      <option name="PROGRAM_PARAMETERS" value=".\input\input.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day4 (s)" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day4" />
+      <option name="PROGRAM_PARAMETERS" value=".\input\sample.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Day1" />
+      <item itemvalue="Kotlin.Day3" />
+      <item itemvalue="Kotlin.Day4 (s)" />
+      <item itemvalue="Kotlin.Day4 (i)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor and complete day3" />
+    <MESSAGE value="Add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
+  </component>
 </project>
