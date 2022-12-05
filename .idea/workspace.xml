@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a placeholder day 5 implementation" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a placeholder day 5 implementation">
+      <change afterPath="$PROJECT_DIR$/Day5/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day5/src/main/kotlin/domain/Command.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -28,25 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/code/aoc/2022/Day4",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/code/aoc/2022/Day4&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day4 (i)">
+  <component name="RunManager" selected="Kotlin.Day5 (i)">
     <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1" />
       <module name="Day1" />
@@ -86,14 +92,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5 (i)" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day5" />
+      <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day5 (s)" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day5" />
+      <option name="PROGRAM_PARAMETERS" value="./input/sample.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Day1" />
       <item itemvalue="Kotlin.Day3" />
       <item itemvalue="Kotlin.Day4 (s)" />
       <item itemvalue="Kotlin.Day4 (i)" />
+      <item itemvalue="Kotlin.Day5 (i)" />
+      <item itemvalue="Kotlin.Day5 (s)" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a placeholder day 5 implementation" />
+      <created>1670216573938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670216573938</updated>
+    </task>
+    <servers />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor and complete day3" />
     <MESSAGE value="Add gitignore" />
