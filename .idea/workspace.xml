@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 5 implementation">
-      <change afterPath="$PROJECT_DIR$/Day6/Day6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" afterDir="false" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 6 answer and day 7 placeholder">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day6/input/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day6/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/Day7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Day6/META-INF/Day6.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Day7/META-INF/Day7.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Day6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Day6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +58,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Day7/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$/Day6/src/main/kotlin" />
       <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day5 (i)">
+  <component name="RunManager" selected="Kotlin.Day7 (s)">
     <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1" />
       <module name="Day1" />
@@ -62,52 +73,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day3" type="JetRunConfigurationType">
+    <configuration name="Day7 (i)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day3" />
-      <option name="PROGRAM_PARAMETERS" value=".\input\sample.txt" />
-      <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day4 (i)" type="JetRunConfigurationType">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day4" />
-      <option name="PROGRAM_PARAMETERS" value=".\input\input.txt" />
-      <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day4" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day4 (s)" type="JetRunConfigurationType">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day4" />
-      <option name="PROGRAM_PARAMETERS" value=".\input\sample.txt" />
-      <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day4" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day5 (i)" type="JetRunConfigurationType">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day5" />
+      <module name="Day7" />
       <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day7" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day5 (s)" type="JetRunConfigurationType">
+    <configuration name="Day7 (s)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day5" />
+      <module name="Day7" />
       <option name="PROGRAM_PARAMETERS" value="./input/sample.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,11 +108,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Day1" />
-      <item itemvalue="Kotlin.Day3" />
-      <item itemvalue="Kotlin.Day4 (s)" />
-      <item itemvalue="Kotlin.Day4 (i)" />
-      <item itemvalue="Kotlin.Day5 (i)" />
-      <item itemvalue="Kotlin.Day5 (s)" />
+      <item itemvalue="Kotlin.Day7 (i)" />
+      <item itemvalue="Kotlin.Day7 (s)" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -150,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670221907921</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add a day 6 placeholder">
+      <created>1670293498798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670293498798</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +144,8 @@
     <MESSAGE value="Restructure the project to have the days as separate subprojects" />
     <MESSAGE value="Add a placeholder day 5 implementation" />
     <MESSAGE value="Add a day 5 implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a day 5 implementation" />
+    <MESSAGE value="Add a day 6 placeholder" />
+    <MESSAGE value="Add a day 6 answer and day 7 placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a day 6 answer and day 7 placeholder" />
   </component>
 </project>
