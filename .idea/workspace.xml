@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 6 answer and day 7 placeholder">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day6/input/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day6/input/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day7/Day7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day7/input/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Day6/META-INF/Day6.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Day7/META-INF/Day7.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/domain/Directory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/domain/DirectoryFile.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/domain/Item.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day6/Day6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Day6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/input/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/input/sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +58,7 @@
       <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day7 (s)">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1" />
       <module name="Day1" />
@@ -93,6 +88,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="2022" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Day3" />
       <method v="2">
@@ -110,7 +112,13 @@
       <item itemvalue="Application.Day1" />
       <item itemvalue="Kotlin.Day7 (i)" />
       <item itemvalue="Kotlin.Day7 (s)" />
+      <item itemvalue="Kotlin.MainKt" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
