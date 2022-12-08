@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 6 answer and day 7 placeholder">
-      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/domain/Directory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/domain/DirectoryFile.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/domain/Item.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day8/input/sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/input/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/input/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Kotlin.Day8 (i)">
     <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1" />
       <module name="Day1" />
@@ -68,22 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day7 (i)" type="JetRunConfigurationType">
+    <configuration name="Day8 (i)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day7" />
+      <module name="Day8" />
       <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day7 (s)" type="JetRunConfigurationType">
+    <configuration name="Day8 (s)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day7" />
+      <module name="Day8" />
       <option name="PROGRAM_PARAMETERS" value="./input/sample.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,6 +89,7 @@
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="2022" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,8 +109,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Day1" />
-      <item itemvalue="Kotlin.Day7 (i)" />
-      <item itemvalue="Kotlin.Day7 (s)" />
+      <item itemvalue="Kotlin.Day8 (i)" />
+      <item itemvalue="Kotlin.Day8 (s)" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670293498798</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add a day 6 answer and day 7 placeholder">
+      <created>1670304462918</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670304462918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
