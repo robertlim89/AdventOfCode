@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 6 answer and day 7 placeholder">
-      <change afterPath="$PROJECT_DIR$/Day8/input/sample.txt" afterDir="false" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 8 answe">
+      <change afterPath="$PROJECT_DIR$/Day9/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day9/input/sample2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day9/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day8 (i)">
+  <component name="RunManager" selected="Kotlin.Day9 (i)">
     <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1" />
       <module name="Day1" />
@@ -66,22 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day8 (i)" type="JetRunConfigurationType">
+    <configuration name="Day9 (i)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day8" />
+      <module name="2022" />
       <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day9" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day8 (s)" type="JetRunConfigurationType">
+    <configuration name="Day9 (s)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day8" />
-      <option name="PROGRAM_PARAMETERS" value="./input/sample.txt" />
+      <module name="2022" />
+      <option name="PROGRAM_PARAMETERS" value="./input/sample2.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,8 +109,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Day1" />
-      <item itemvalue="Kotlin.Day8 (i)" />
-      <item itemvalue="Kotlin.Day8 (s)" />
+      <item itemvalue="Kotlin.Day9 (i)" />
+      <item itemvalue="Kotlin.Day9 (s)" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
@@ -149,8 +149,26 @@
       <option name="project" value="LOCAL" />
       <updated>1670304462918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add a day 8 answe">
+      <created>1670479444969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670479444969</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor and complete day3" />
@@ -160,6 +178,7 @@
     <MESSAGE value="Add a day 5 implementation" />
     <MESSAGE value="Add a day 6 placeholder" />
     <MESSAGE value="Add a day 6 answer and day 7 placeholder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a day 6 answer and day 7 placeholder" />
+    <MESSAGE value="Add a day 8 answe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a day 8 answe" />
   </component>
 </project>
