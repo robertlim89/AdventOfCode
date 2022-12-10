@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 8 answe">
-      <change afterPath="$PROJECT_DIR$/Day9/input/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day9/input/sample2.txt" afterDir="false" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 7 answer and day 8+9 placeholders">
+      <change afterPath="$PROJECT_DIR$/Day10/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day9/Day9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2022.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day9/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day9/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/Day8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day10/Day10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Day8/META-INF/Day8.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
       <list>
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -42,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/code/aoc/2022/Day4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/code/aoc/2022&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -50,46 +56,34 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\aoc\2022" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Day7/src/main/kotlin" />
-      <recent name="$PROJECT_DIR$/Day6/src/main/kotlin" />
-      <recent name="C:\code\aoc\2022\Day4\src\kotlin" />
+      <recent name="C:\code\aoc\2022\Day10" />
+      <recent name="C:\code\aoc\2022\Day10\src\main\kotlin" />
+      <recent name="C:\code\aoc\2022\Day9\src" />
+      <recent name="C:\code\aoc\2022\Day9" />
+      <recent name="C:\code\aoc\2022\Day8" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day9 (i)">
-    <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day1" />
-      <module name="Day1" />
-      <option name="PROGRAM_PARAMETERS" value=".\files\input.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day1" />
+  <component name="RunManager" selected="Kotlin.MainKt (s)">
+    <configuration name="MainKt (i)" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day10" />
+      <option name="PROGRAM_PARAMETERS" value=".\input\input.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9 (i)" type="JetRunConfigurationType">
+    <configuration name="MainKt (s)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="2022" />
-      <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
+      <module name="Day10" />
+      <option name="PROGRAM_PARAMETERS" value=".\input\sample.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day9" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day9 (s)" type="JetRunConfigurationType">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="2022" />
-      <option name="PROGRAM_PARAMETERS" value="./input/sample2.txt" />
-      <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="2022" />
-      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,16 +102,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Day1" />
-      <item itemvalue="Kotlin.Day9 (i)" />
-      <item itemvalue="Kotlin.Day9 (s)" />
-      <item itemvalue="Kotlin.MainKt" />
+      <item itemvalue="Kotlin.MainKt (s)" />
+      <item itemvalue="Kotlin.MainKt (i)" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.MainKt" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -178,7 +165,7 @@
     <MESSAGE value="Add a day 5 implementation" />
     <MESSAGE value="Add a day 6 placeholder" />
     <MESSAGE value="Add a day 6 answer and day 7 placeholder" />
-    <MESSAGE value="Add a day 8 answe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a day 8 answe" />
+    <MESSAGE value="Add a day 7 answer and day 8+9 placeholders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a day 7 answer and day 8+9 placeholders" />
   </component>
 </project>

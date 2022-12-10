@@ -19,5 +19,10 @@
 *.tar.gz
 *.rar
 
+# Git files
+*.patch
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_2022_6_24_pm__Changes_.xml
+/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2022_4_35_pm__Changes_.xml
