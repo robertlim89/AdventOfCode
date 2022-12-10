@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 7 answer and day 8+9 placeholders">
-      <change afterPath="$PROJECT_DIR$/Day10/input/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day10/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day9/Day9.iml" afterDir="false" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 10 answer and fix all the module BS">
+      <change afterPath="$PROJECT_DIR$/Day11/Day11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day11/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/Day12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/Day13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2022.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day8/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day9/Day8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day10/Day10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Day8/META-INF/Day8.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,32 +42,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/code/aoc/2022&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/code/aoc/2022/Day12",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15625",
+    "project.structure.side.proportion": "0.47930083",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\code\aoc\2022" />
+      <recent name="C:\code\aoc\2022\Day12" />
+      <recent name="C:\code\aoc\2022\Day12\src\main\kotlin" />
+      <recent name="C:\code\aoc\2022\Day11\src\main\kotlin" />
+      <recent name="C:\code\aoc\2022\Day11\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\aoc\2022\Day13\src" />
+      <recent name="C:\code\aoc\2022\Day13" />
+      <recent name="C:\code\aoc\2022\Day12\src" />
       <recent name="C:\code\aoc\2022\Day10" />
       <recent name="C:\code\aoc\2022\Day10\src\main\kotlin" />
-      <recent name="C:\code\aoc\2022\Day9\src" />
-      <recent name="C:\code\aoc\2022\Day9" />
-      <recent name="C:\code\aoc\2022\Day8" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (s)">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="MainKt (i)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Day10" />
@@ -88,6 +92,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day11" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Day3" />
       <method v="2">
@@ -104,7 +115,13 @@
     <list>
       <item itemvalue="Kotlin.MainKt (s)" />
       <item itemvalue="Kotlin.MainKt (i)" />
+      <item itemvalue="Kotlin.MainKt" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -166,6 +183,7 @@
     <MESSAGE value="Add a day 6 placeholder" />
     <MESSAGE value="Add a day 6 answer and day 7 placeholder" />
     <MESSAGE value="Add a day 7 answer and day 8+9 placeholders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a day 7 answer and day 8+9 placeholders" />
+    <MESSAGE value="Add a day 10 answer and fix all the module BS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a day 10 answer and fix all the module BS" />
   </component>
 </project>
