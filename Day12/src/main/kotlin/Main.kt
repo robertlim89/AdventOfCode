@@ -1,22 +1,23 @@
 import java.io.File
 
 fun main(args: Array<String>) {
-    val map = mutableListOf<List<Pair<Int, Type>>>()
-    File(args[0]).forEachLine { line ->
-        val heights = line.toCharArray().map { it.toHeight() }
-        println(heights)
-        map.add(heights)
+    val map = mutableMapOf<Coord, Int>()
+    val lines = File(args[0]).readLines()
+
+    var start = Coord(0, 0)
+    var end = Coord(0, 0)
+    for((y, line) in lines.withIndex()) {
+        for((x, char) in line.withIndex()) {
+            map[Coord(x,y)] = char.toHeight()
+            if(char == 'S') start = Coord(x, y)
+            if(char == 'E') end = Coord(x, y)
+        }
     }
+    println("From $start: ${pathFind(start, end, map)}")
+    val list = map.entries.filter { it.value == 1 }.map { it.key }
+    println(list.minOfOrNull { pathFind(it, end, map) })
 }
 
-fun Char.toHeight() : Pair<Int, Type> {
-    if(this == 'S') return Pair(1, Type.START)
-    if(this == 'E') return Pair(26, Type.END)
-    return "_abcdefghijklmnopqrstuvwxyz".indexOfFirst { it == this } to Type.PATH
-}
-
-enum class Type {
-    START,
-    END,
-    PATH
+fun Char.toHeight(): Int {
+    return "SabcdefghijklmnopqrstuvwxyzE".indexOfFirst { it == this }
 }
