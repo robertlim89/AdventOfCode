@@ -3,7 +3,7 @@ import java.io.File
 
 fun main(args: Array<String>) {
     val objectMapper = ObjectMapper()
-    var packets = mutableListOf<List<*>>()
+    val packets = mutableListOf<List<*>>()
     File(args[0]).forEachLine { line ->
         if (line.isNotEmpty()) {
             packets.add(objectMapper.readValue(line, List::class.java))
@@ -12,17 +12,16 @@ fun main(args: Array<String>) {
     var sumIndex = 0
     (0 until packets.size step 2).forEach { i ->
         val realIndex =  (i / 2) + 1
-        println("Checking pair $realIndex")
+        //println("Checking pair $realIndex")
         sumIndex += if (packets[i].isInRightOrder(packets[i + 1])) {
-            println("Pair $realIndex is good")
+            //println("Pair $realIndex is good\n")
             realIndex
         } else 0
-        println()
     }
-    println(sumIndex)
+    println("Sum of indexes: $sumIndex")
     packets.add(listOf(listOf(2)))
     packets.add(listOf(listOf(6)))
-    packets = packets.sortedWith { o1, o2 -> -o1.isInRightOrderWithResult(o2) } as MutableList<List<*>>
+    packets.sortWith { o1, o2 -> -o1.isInRightOrderWithResult(o2) }
     val dividerkey1 = packets.indexOf(listOf(listOf(2)))+1
     val dividerkey2 = packets.indexOf(listOf(listOf(6)))+1
     //println(packets)
