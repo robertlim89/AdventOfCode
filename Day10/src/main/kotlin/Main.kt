@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
             val linePos = cycle % 40
             val minSprite = (signal % 40) - 1
             val maxSprite = (signal % 40) + 1
-            print(if (linePos in minSprite..maxSprite) "#" else ".")
+            print(if (linePos in minSprite..maxSprite) "#" else " ")
             cycle++
             if (cycle % 40 == 0) print("\n")
         }
