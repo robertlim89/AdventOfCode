@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Add a day 11 to 13">
-      <change afterPath="$PROJECT_DIR$/Day12/input/sample.txt" afterDir="false" />
+    <list default="true" id="eedd538a-650a-4da3-819e-437d45c64deb" name="Changes" comment="Start day 12">
+      <change afterPath="$PROJECT_DIR$/Day13/input/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/src/main/kotlin/domain/Packet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/src/main/kotlin/domain/Stream.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/src/main/kotlin/domain/Value.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day11/input/sample.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day12/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day12/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day13/Day13/Day12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/Day13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day13/Day13.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Day13/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Interface" />
         <option value="Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -40,12 +42,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/code/aoc/2022/Day12&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15625&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.47930083&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
@@ -67,29 +73,31 @@
       <recent name="C:\code\aoc\2022\Day10\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (s)">
-    <configuration name="MainKt (2)" type="JetRunConfigurationType">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day12" />
-      <shortenClasspath name="NONE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="MainKt (i) (1)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day12" />
+      <module name="Day13" />
       <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
       <shortenClasspath name="NONE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day12" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day13" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainKt (s)" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Day12" />
+      <module name="Day13" />
       <option name="PROGRAM_PARAMETERS" value="./input/sample.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day13" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Day12" />
+      <option name="PROGRAM_PARAMETERS" value="./input/input.txt" />
       <shortenClasspath name="NONE" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day12" />
       <method v="2">
@@ -112,8 +120,13 @@
     <list>
       <item itemvalue="Kotlin.MainKt (s)" />
       <item itemvalue="Kotlin.MainKt (i) (1)" />
-      <item itemvalue="Kotlin.MainKt (2)" />
+      <item itemvalue="Kotlin.MainKt" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -152,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670479444969</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Start day 12">
+      <created>1670822173274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670822173274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +197,7 @@
     <MESSAGE value="Add a day 7 answer and day 8+9 placeholders" />
     <MESSAGE value="Add a day 10 answer and fix all the module BS" />
     <MESSAGE value="Add a day 11 to 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a day 11 to 13" />
+    <MESSAGE value="Start day 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start day 12" />
   </component>
 </project>
