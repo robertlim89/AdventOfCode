@@ -22,7 +22,9 @@
 # Git files
 *.patch
 
-.idea/
+workspace.xml
+usage.statistics.xml
+shelf/
 out/
 
 *.DS_Store
