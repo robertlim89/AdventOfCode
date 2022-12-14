@@ -55,12 +55,6 @@ fun main(args: Array<String>) {
     println("Monkey business = $business")
 }
 
-/* 100
-Monkey 0 inspected 502 times
-Monkey 1 inspected 494 times
-Monkey 2 inspected 46 times
-Monkey 3 inspected 527 times
- */
 data class Monkey(
     var items: ArrayDeque<Long>,
     var operation: (v: Long) -> Long,

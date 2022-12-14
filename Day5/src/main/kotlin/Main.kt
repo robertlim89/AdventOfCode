@@ -1,7 +1,6 @@
-import domain.Command
+import domain.parseCommand
 import java.io.BufferedReader
 import java.io.FileReader
-import java.lang.IllegalArgumentException
 
 fun main(args: Array<String>) {
     val stacks = mutableListOf<ArrayDeque<String>>()
@@ -9,7 +8,7 @@ fun main(args: Array<String>) {
     var line = reader.readLine()
 
     // Read the stacks
-    readStack(line).forEach {
+    line.readStack().forEach {
         val stack = ArrayDeque<String>()
         it?.let { stack.addLast(it) }
         stacks.add(stack)
@@ -17,12 +16,12 @@ fun main(args: Array<String>) {
 
     line = reader.readLine()
     var isReadingStacks = true
-    while(isReadingStacks && line != null) {
-        val level = readStack(line)
-        if(level.all { it == null }) {
+    while (isReadingStacks && line != null) {
+        val level = line.readStack()
+        if (level.all { it == null }) {
             isReadingStacks = false
         } else {
-            for((index, place) in level.withIndex()) {
+            for ((index, place) in level.withIndex()) {
                 val stack = stacks[index]
                 place?.let { stack.addLast(it) }
             }
@@ -32,22 +31,18 @@ fun main(args: Array<String>) {
 
     line = reader.readLine()
     // Do the moving
-    while(line != null) {
-        val command = parseCommand(line)
-        val movedItems = (1..command.count).map { stacks[command.sourceStack-1].removeFirst() }
-        stacks[command.destStack-1].addAll(0, movedItems)
+    while (line != null) {
+        val command = line.parseCommand()
+        val movedItems = (1..command.count).map { stacks[command.sourceStack - 1].removeFirst() }
+        stacks[command.destStack - 1].addAll(0, movedItems)
         line = reader.readLine()
     }
 
-    println("Top of each stack has ${stacks.map{ it.first() }}")
+    println("Top of each stack has ${stacks.map { it.first() }}")
 }
 
-fun readStack(line: String): List<String?> {
-    val level = line.chunked(4)
+fun String.readStack(): List<String?> {
+    val level = this.chunked(4)
     return level.map { """\[(\w)]""".toRegex().find(it)?.groupValues?.get(1) }
 }
 
-fun parseCommand(line: String): Command {
-    val commands = "move (\\d+) from (\\d+) to (\\d+)".toRegex().find(line)?.groupValues
-    return commands?.let { Command(it[1].toInt(), it[2].toInt(), it[3].toInt()) } ?: throw IllegalArgumentException(line)
-}

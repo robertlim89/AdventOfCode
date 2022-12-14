@@ -26,15 +26,10 @@ fun solve(filename: String, solvePart1: Boolean, showMap: Boolean) {
             CoordRange(first, second)
         })
     }
-    if(!solvePart1) rockPaths.add(CoordRange(Coord(Int.MAX_VALUE, maxY+2), Coord(Int.MIN_VALUE, maxY+2)))
+    if (!solvePart1) rockPaths.add(CoordRange(Coord(Int.MAX_VALUE, maxY + 2), Coord(Int.MIN_VALUE, maxY + 2)))
 
-    if(showMap) {
-        (0..maxY + 2).forEach { y ->
-            (minX..maxX).forEach { x ->
-                if (rockPaths.any { it.contains(Coord(x, y)) }) print("#") else print(" ")
-            }
-            println()
-        }
+    if (showMap) {
+        printMap(rockPaths, mutableSetOf(), minX, maxX, maxY + 2)
     }
 
     val finalGrainPos = mutableSetOf<Coord>()
@@ -42,40 +37,44 @@ fun solve(filename: String, solvePart1: Boolean, showMap: Boolean) {
     (0..Int.MAX_VALUE).forEach { grain ->
         var grainPos = Coord(500, 0)
         var hasStopped = false
-        while(!hasStopped) {
+        while (!hasStopped) {
             hasStopped = true
-            // Try down
             potentialDirections.firstOrNull { xDiff ->
-                val potentialPos = Coord(grainPos.x + xDiff, grainPos.y+1)
-                if(!finalGrainPos.contains(potentialPos) && rockPaths.none { it.contains(potentialPos)}) {
+                val potentialPos = Coord(grainPos.x + xDiff, grainPos.y + 1)
+                if (!finalGrainPos.contains(potentialPos) && rockPaths.none { it.contains(potentialPos) }) {
                     grainPos = potentialPos
                     hasStopped = false
                     return@firstOrNull true
                 }
                 false
             }
-            if(solvePart1 && grainPos.y >= maxY) {
+            if (solvePart1 && grainPos.y >= maxY) {
+                //finalGrainPos.add(grainPos) // Enable this if you want to see where the last grain ends up
                 println("Only $grain grains fit before they fall")
+                if (showMap) printMap(rockPaths, finalGrainPos, minX, maxX, maxY + 2)
                 return
             }
         }
-        if(!solvePart1 && grainPos == Coord(500, 0)) {
-            println("No more sand after ${grain+1}")
+        finalGrainPos.add(grainPos)
+        if (!solvePart1 && grainPos == Coord(500, 0)) {
+            println("No more sand after ${grain + 1}")
+            if (showMap) printMap(rockPaths, finalGrainPos, minX, maxX, maxY + 2)
             return
         }
-        finalGrainPos.add(grainPos)
     }
+
 }
 
-data class Coord(var x: Int, var y: Int) : Comparable<Coord> {
-    override fun compareTo(other: Coord): Int {
-        if (x != other.x) return x - other.x
-        return y - other.y
-    }
-}
-
-class CoordRange(override val endInclusive: Coord, override val start: Coord) : ClosedRange<Coord> {
-    override operator fun contains(value: Coord): Boolean {
-        return (start.x..endInclusive.x).contains(value.x) && (start.y..endInclusive.y).contains(value.y)
+fun printMap(rocks: MutableList<CoordRange>, sand: MutableSet<Coord>, minX: Int, maxX: Int, maxY: Int) {
+    val start = if(sand.isNotEmpty()) min(sand.map { it.x }.min(), minX) - 2 else minX
+    val end = if(sand.isNotEmpty()) max(sand.map { it.x }.max(), maxX) + 2 else maxX
+    (0..maxY).forEach { y ->
+        (start..end).forEach { x ->
+            val coord = Coord(x, y)
+            if (rocks.any { it.contains(coord) }) print("█")
+            else if (sand.contains(coord)) print(".")
+            else print(" ")
+        }
+        println()
     }
 }
