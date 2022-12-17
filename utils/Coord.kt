@@ -14,8 +14,8 @@ data class Coord(val x: Int, val y: Int) : Comparable<Coord> {
     }
 
     override fun compareTo(other: Coord): Int {
-        if (x != other.x) return x - other.x
-        return y - other.y
+        if (x != other.x) return (x - other.x)
+        return (y - other.y)
     }
 
     fun manhattanDistance(other: Coord): Int = abs(x - other.x) + abs(y - other.y)
