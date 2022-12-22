@@ -10,7 +10,7 @@ fun solve(filename: String, key: Long, indexes: List<Int>): Long {
     //println("Initial arrangement:\n${list}\n")
 
     (1..10).forEach {
-        for(i in 0 until fullSize) {
+        list.indices.forEach { i ->
             val (index, value) = list.withIndex().first { e -> e.value.first == i }
             list.removeAt(index)
             val newIndex = (index.toLong() + value.second).mod(list.size)

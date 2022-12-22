@@ -34,9 +34,7 @@ fun solve(filename: String, part: Int) {
         }
 
         2 -> {
-            val surrounding = getSurrounding(cubes)
-            val externalFaces =
-                println(externalFaces)
+
         }
     }
 
