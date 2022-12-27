@@ -73,8 +73,8 @@ fun solve(filename: String, lineNumber: Int, solvePart1: Boolean, showMap: Boole
             val sortedRanges = ranges.sortedBy { it.first }
             var highest = sortedRanges.first().last
             sortedRanges.drop(1).forEach {range ->
-                if(range.start > (highest+1)) {
-                    println("Found at ${range.start} $y = ${(range.start-1L)*4000000+y}")
+                if(range.first > (highest+1)) {
+                    println("Found at ${range.first} $y = ${(range.first -1L)*4000000+y}")
                 }
                 // End is bigger but the start was not
                 else if (range.last > highest) {
