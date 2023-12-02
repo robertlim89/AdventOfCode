@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
             val directoryName = line.takeLast(line.length - 5)
             when (directoryName) {
                 "/" -> current = root
-                ".." -> current = current.parent!!
+                "src/main" -> current = current.parent!!
                 else -> {
                     current = current.getChild(directoryName)
                 }
