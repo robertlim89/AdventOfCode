@@ -36,7 +36,7 @@ data class Hand(val cards: String, val bid: Int): Comparable<Hand> {
                 if (freq.drop(1).filterIndexed{ id, _ -> id != idx }.any { it == 2 })  Result.FullH else Result.ThreeK
             }
             2 -> {
-                if (freq.drop(1).filterIndexed{ id, _ -> id != idx }.count { it == 2 } > 0) Result.TwoPair else Result.OnePair
+                if (freq.drop(1).count { it == 2 } > 1) Result.TwoPair else Result.OnePair
             }
             else -> Result.HighCard
         }
