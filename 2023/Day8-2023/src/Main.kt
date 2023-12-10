@@ -46,6 +46,7 @@ fun getSteps(moves: CharArray, map: Map<String, Pair<String, String>>, loc: Stri
         current = if (moves[steps % moves.size] == 'L') map[current]!!.first else map[current]!!.second
         steps++
     }
+    println("Current $current step $steps")
 
     return steps.toLong()
 }
