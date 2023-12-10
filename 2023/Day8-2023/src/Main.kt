@@ -17,31 +17,35 @@ fun main(args: Array<String>) {
         }
     }
 
-    val pos = map.keys.filter { it[2] == 'A' }.toTypedArray()
-    val cycles = Array<MutableSet<String>>(pos.size) { mutableSetOf() }
-    val cycleSync = Array<Int?>(pos.size) { null }
-    val cycleStartPos = Array(pos.size) { "" }
-    val cycleLength = Array<MutableList<Int>>(pos.size) { mutableListOf() }
-    var ind = 0
+    val res = map.filter{ it.key.endsWith('A') }.map{
+        getSteps(moves, map, it.key)
+    }.reduce{ acc, i -> lcm(acc, i)}
 
-    repeat(100000) {
-        pos.indices.forEach{ id ->
-            pos[id] = if (moves[ind % moves.size] == 'L') map[pos[id]]!!.first else map[pos[id]]!!.second
+    println(res)
+}
 
+fun lcm(a: Long, b: Long): Long {
+    var ma = a
+    var mb = b
+    var remainder: Long
 
-            if(cycleLength[id].size < 6 && cycleSync[id] != null && pos[id][2] == 'Z') {
-                println("${pos[id]} $ind ${cycleSync[id]}")
-                val new = ind - (if(cycleLength[id].isEmpty()) cycleSync[id] else cycleLength[id].last)!!
-                cycleLength[id].add(new)
-            }
-
-            if (cycleSync[id] == null && !cycles[id].add(pos[id])) {
-                cycleSync[id] = ind
-                cycleStartPos[id] = pos[id]
-            }
-        }
-        ind++
+    while (mb != 0L) {
+        remainder = ma % mb
+        ma = mb
+        mb = remainder
     }
-    println("Cycle Length: ${cycleLength.toList()}")
-    println("Cycles: ${cycleSync.toList()}")
+
+    return a * b / ma
+}
+
+fun getSteps(moves: CharArray, map: Map<String, Pair<String, String>>, loc: String): Long {
+    var current = loc
+    var steps = 0
+
+    while (!current.endsWith('Z')) {
+        current = if (moves[steps % moves.size] == 'L') map[current]!!.first else map[current]!!.second
+        steps++
+    }
+
+    return steps.toLong()
 }
