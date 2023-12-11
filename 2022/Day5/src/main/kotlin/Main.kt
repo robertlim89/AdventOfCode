@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
     // Read the stacks
     line.readStack().forEach {
         val stack = ArrayDeque<String>()
+        stack.
         it?.let { stack.addLast(it) }
         stacks.add(stack)
     }
