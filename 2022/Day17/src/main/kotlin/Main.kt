@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     val floor = mutableMapOf<Int, SortedSet<Int>>()
     floor[0] = (0..6).toSortedSet()
     var floorHeight = 0
-    var rockCount = 0
+    //var rockCount = 0
     var windCycle = 0
     var cycleSyncNum: Int? = null
     val seenCycles = mutableSetOf<Int>()
@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
     var cycleStartRockCount = -1
     val partialCycleHeights = mutableListOf<Int>()
 
-    repeat(100000) {
+    repeat(100000) {rockCount ->
         var currentRock = rocks[rockCount % 5].toMutableList().shiftFloor(floorHeight)
         while (true) {
             val windDir = windDirections[windCycle]
@@ -59,7 +59,6 @@ fun main(args: Array<String>) {
         if (cycleStartRock != null) {
             partialCycleHeights.add(floorHeight - 1)
         }
-        rockCount++
     }
     println(floorHeight)
 }
