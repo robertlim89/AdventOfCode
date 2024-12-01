@@ -1,5 +1,6 @@
 import java.io.File
 import java.util.*
+import kotlin.math.abs
 import kotlin.math.max
 
 fun main(args: Array<String>) {
@@ -23,7 +24,6 @@ fun pathFind(start: Coord, map: MutableMap<Coord, Char>, size: Pair<Int, Int>): 
     queue.add(start to 0)
     var maxLoop = 0
     val vertices = mutableListOf(start)
-    //val visited = mutableSetOf<Coord>()
     while (queue.isNotEmpty()) {
         val (node, steps) = queue.pop()
         maxLoop = max(maxLoop, steps)
@@ -42,21 +42,14 @@ fun pathFind(start: Coord, map: MutableMap<Coord, Char>, size: Pair<Int, Int>): 
 }
 
 fun List<Coord>.getArea(map: MutableMap<Coord, Char>, width: Int, height: Int): Int {
-    var area = 0
+    var area = 0.0
 
-    for(y in 0 until height) {
-        var windings = 0
-        for(x in 0 until width) {
-            val point = Coord(x, y)
-            val value = map[point]!!
-            if (point in this && value in "|S7J") windings++
-            if (point !in this && windings % 2 == 1) {
-                println("Point $point = ${map[point]} $windings")
-                area++
-            }
-        }
+    this.indices.forEach {
+        area += this[it].x * this[(it + 1) % this.size].y -
+                this[(it + 1) % this.size].x * this[it].y
     }
-    return area
+    area = (abs(area) + this.size) /2 + 1
+    return area.toInt()
 }
 
 fun Char.getNeighbours(loc: Coord): List<Coord> {

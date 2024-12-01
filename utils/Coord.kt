@@ -1,6 +1,6 @@
 import kotlin.math.abs
 
-data class Coord(val x: Int, val y: Int) : Comparable<Coord> {
+data class Coord(val x: Long, val y: Long) : Comparable<Coord> {
     fun directNeighbours() : List<Coord> {
         val list = mutableListOf<Coord>()
         (-1..1).forEach { yy ->
@@ -14,12 +14,13 @@ data class Coord(val x: Int, val y: Int) : Comparable<Coord> {
     }
 
     override fun compareTo(other: Coord): Int {
-        if (x != other.x) return (x - other.x)
-        return (y - other.y)
+        return if (x != other.x) x.compareTo(other.x) else y.compareTo(other.y)
     }
 
-    fun manhattanDistance(other: Coord): Int = abs(x - other.x) + abs(y - other.y)
+    fun manhattanDistance(other: Coord): Long = abs(x - other.x) + abs(y - other.y)
 }
+
+data class LongCoord(val x: Long, val y: Long)
 
 class CoordRange(override val endInclusive: Coord, override val start: Coord) : ClosedRange<Coord> {
     override operator fun contains(value: Coord): Boolean {
