@@ -1,5 +1,3 @@
-import java.io.File
-import java.math.BigDecimal
 import kotlin.math.abs
 
 fun main(args: Array<String>) {
@@ -48,7 +46,7 @@ class Day18(fileName: String): BaseDay(fileName) {
     override fun part2(): String {
         var posX = 0L
         var posY = 0L
-        val vertices = mutableListOf(LongCoord(0, 0))
+        val vertices = mutableListOf(Coord(0, 0))
         var perimeter = 0L
         lines.forEach { line ->
             val props = line.split(' ')
@@ -73,7 +71,7 @@ class Day18(fileName: String): BaseDay(fileName) {
             }
             println("Instruction [$direction, $length")
             perimeter += length
-            vertices.add(LongCoord(posX, posY))
+            vertices.add(Coord(posX, posY))
         }
         var area =  0L
         vertices.indices.forEach {
