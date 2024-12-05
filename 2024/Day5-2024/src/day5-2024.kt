@@ -3,9 +3,8 @@ fun main(args: Array<String>) {
 }
 
 class Day5(filename: String): BaseDay(filename) {
-
-    val rules = mutableListOf<Rule>()
-    val manuals = mutableListOf<List<Int>>()
+    private val rules = mutableListOf<Rule>()
+    private val manuals = mutableListOf<List<Int>>()
 
     fun process() {
         var isRules = true
@@ -29,7 +28,7 @@ class Day5(filename: String): BaseDay(filename) {
         return manuals
             .filter { manual -> rules.all { rule -> rule.isValid(manual) } }
             .sumOf { manual -> manual[manual.size/2] }
-            .toString()
+            .toString() // 5166
     }
 
     override fun part2(): String {
@@ -46,10 +45,10 @@ class Day5(filename: String): BaseDay(filename) {
                 ordering
             }
             .sumOf { manual -> manual[manual.size/2] }
-            .toString()
+            .toString() // 4679
     }
 
-    fun Set<Rule>.createOrdering(): List<Int> {
+    private fun Set<Rule>.createOrdering(): List<Int> {
         var beforeMap = mutableMapOf<Int, MutableSet<Int>>()
         this.forEach{ rule ->
             val existing = beforeMap.getOrDefault(rule.after, mutableSetOf())
@@ -76,6 +75,6 @@ class Day5(filename: String): BaseDay(filename) {
             return beforeIndex < afterIndex
         }
 
-        fun isApplicable(input: List<Int>) = input.contains(before) && input.contains(after)
+        fun isApplicable(input: List<Int>) = input.containsAll(listOf(before, after))
     }
 }
