@@ -19,6 +19,10 @@ data class Coord(val x: Long, val y: Long) : Comparable<Coord> {
         return if (x != other.x) x.compareTo(other.x) else y.compareTo(other.y)
     }
 
+    fun inBounds(bounds: Coord) : Boolean {
+        return x >= 0 && x < bounds.x && y >= 0 && y < bounds.y
+    }
+
     fun plus(other: Coord) = Coord(x + other.x, y + other.y)
     fun minus(other: Coord) = Coord(x - other.x, y - other.y)
 
