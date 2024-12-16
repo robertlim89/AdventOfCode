@@ -3,7 +3,13 @@ import kotlin.math.abs
 data class Coord(val x: Long, val y: Long) : Comparable<Coord> {
     constructor(x: Int, y: Int): this(x.toLong(), y.toLong())
 
-    fun directNeighbours() : List<Coord> {
+    fun neighbours(includeDiagonal: Boolean): List<Coord> {
+        return if (includeDiagonal)
+            directNeighbours()
+        else listOf(Coord(x-1, y), Coord(x+1, y), Coord(x, y-1), Coord(x, y+1))
+    }
+
+    fun directNeighbours(): List<Coord> {
         val list = mutableListOf<Coord>()
         (-1..1).forEach { yy ->
             (-1..1).forEach { xx ->
